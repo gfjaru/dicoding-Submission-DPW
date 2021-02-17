@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Gandara Fajar Umbara">
+        <meta name="description" content="">
+        <title>swrnk</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <noscript>Halaman ini membutuhkan JavaScript</noscript>
+        <div class="container">
+            <header>
+                <h1>swrnk</h1>
+                <nav>
+                    <a href="#articles" id="articlesBtn">articles</a>
+                    <a href="#projects" id="projectsBtn">projects</a>
+                </nav>
+            </header>
+            <main>
+                <div class="flex-container">
+                    <div id="content">
+                        <div id="articles">
+                        <article>
+                            <h2>
+                                <a href="https://www.linuxsec.org/2019/10/install-ghost-cms-di-ubuntu-1804.html">
+                                    Install Ghost CMS di Ubuntu 18.04
+                                </a>
+                            </h2>
+                            <div class="date">Jumat, 04 Oktober 2019</div>
+                            <p>Ghost adalah sebuah blogging plaform / cms open source yang berjalan diatas sistem Node.JS, umumnya dipakai oleh penulis / perseorangan dan juga organisasi. Ghost bisa dibilang lebih simple dari Wordpress namun fiturnya juga terbatas.</p>
+                        </article>
+                        <article>
+                            <h2>
+                                <a href="https://www.linuxsec.org/2016/06/mencoba-kubuntu-1604-di-ram-2gb.html">
+                                    Mencoba Kubuntu 16.04 di RAM 2GB
+                                </a>
+                            </h2>
+                            <div class="date">Selasa, 14 Juni 2016</div>
+                            <p>Kubuntu adalah salah satu varian dari Ubuntu, Kubuntu menggunakan Desktop Environment KDE. Di versi 16.04, Kubuntu menggunakan KDE Plasma, animasi nya yang smooth, dan juga bisa dibilang sangat user-friendly. Kubuntu bisa dibilang cocok untuk user yang mau berpindah dari Windows ke Linux. </p>
+                        </article>
+                        <article>
+                            <h2>
+                                <a href="https://www.linuxsec.org/2016/06/elementaryos-freya-032-linux-bernuansa.html">
+                                    ElementaryOS Freya 0.3.2, Linux Bernuansa Mac OS
+                                </a>
+                            </h2>
+                            <div class="date">Selasa, 14 Juni 2016</div>
+                            <p>Kali ini saya mencoba sistim operasi yang bisa dibilang mirip dengan sistem operasi Mac OS, yaitu elementaryOS. elementaryOS ini adalah turunan dari Ubuntu 14.04. Kali ini saya mencoba elementaryOS dengan sandi nama Freya dengan versi 0.3.2. </p>
+                        </article>
+                        <article>
+                            <h2>
+                                <a href="https://www.linuxsec.org/2016/06/atom-text-editor-dari-github.html">
+                                    Instalasi Atom, Text Editor Open Source dari Github
+                                </a>
+                            </h2>
+                            <div class="date">Sabtu, 11 Juni 2016</div>
+                            <p>Atom adalah text editor modern buatan GitHub. Atom ini seperti Sublime Text, hanya saja Atom gratis untuk digunakan. Tetapi, Atom ini baru tersedia versi 64bit saja. Kelebihannya, Atom gratis, dan tentu saja open source.</p>
+                        </article>
+                        </div>
+                        <div id="projects">
+                            <article>
+                                <h2>
+                                    <a href="https://github.com/gfjaru/reddit-watcher">reddit-watcher</a>
+                                </h2>
+                                <p>Send meme(s) directly to your discord server using Webhook.</p>
+                            </article>
+                            <article>
+                                <h2>
+                                    <a href="https://github.com/gfjaru/pro-micro-macropad">pro-micro-macropad</a>
+                                </h2>
+                                <p>Custom macro pad, 2 key(s) for osu!, 16key(s) for utility, eps/svg included.</p>
+                            </article>
+                            <article>
+                                <h2>
+                                    <a href="https://github.com/gfjaru/Kiko">Kiko</a>
+                                </h2>
+                                <p>Lightweight Jekyll theme, inspired from Windows Mobile UI</p>
+                            </article>
+                        </div>
+                    </div>
+                    <aside class="profile">
+                        <h2>Author</h2>
+                        <img class="profile_img" src="https://avatars.githubusercontent.com/u/14217969?s=460&u=9c5511d032108221cb78e1173e5ff99e0753df45&v=4" alt="profile_img">
+                        <h3>Gandara Fajar Umbara</h3>
+                        <p>Content Writter @ LinuxSec<br />Student @ Telkom University<br /><a href="https://umbara.me/">umbara.me</a></p>
+                    </aside>
+                </div>
+            </main>
+            <footer>
+                <p>Crafted with <span style="color:#e74c3c">❤</span> - 2021 &copy; Gandara Fajar Umbara</p>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            var docAr = document.getElementById("articles");
+            var docPr = document.getElementById("projects")
+            document.getElementById("articlesBtn").onclick = function (){
+                docAr.style.display="block";
+                docPr.style.display="none";
+            }
+            document.getElementById("projectsBtn").onclick = function (){
+                docPr.style.display="block";
+                docAr.style.display="none";
+            }
+            window.onload = function() {
+                docPr.style.display="none";
+            }
+        </script>
+    </body>
+</html>
